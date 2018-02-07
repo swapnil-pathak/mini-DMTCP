@@ -1,0 +1,14 @@
+MINI-DMTCP
+Swapnil Pathak
+
+The package contains ckpt.c, restart.c, makefile, hello.c and README.
+
+To build, enter command: make clean
+Then enter: make
+
+This will create restart, restart.o, hello.o, hello, libckpt.so and run the hello program.
+Now, as given in the makefile, the hello program would be interrupted by SIGUSR2 and myckpt - checkpoint image would be created.
+The program would be killed later.
+
+To resume the program from the checkpoint, run command
+make res
